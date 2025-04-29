@@ -1,16 +1,14 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import path from "path";
+
+import tailwindcss from "@tailwindcss/vite";
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  plugins: [react()],
-  css: {
-    // Opsi 1: Hapus properti minify untuk menggunakan default (esbuild)
-    // minify: 'esbuild',
-
-    // Opsi 2: Biarkan tidak terdefinisi (akan menggunakan default esbuild)
-    // minify: undefined,
-
-    // Opsi 3: Menonaktifkan minifikasi untuk debugging
-    // minify: false,
-  },
+	plugins: [react(), tailwindcss()],
+	resolve: {
+		alias: {
+			"@": path.resolve(__dirname, "./src"),
+		},
+	},
 });
