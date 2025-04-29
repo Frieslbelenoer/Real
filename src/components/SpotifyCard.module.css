@@ -1,0 +1,91 @@
+/* src/components/SpotifyCard.module.css */
+.spotifyCard {
+    background-color: #1db954; /* Warna hijau Spotify */
+    color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Sesuaikan lebar */
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .spotifyIcon {
+    font-size: 1.2rem;
+    margin-right: 8px;
+  }
+  
+  /* src/components/SpotifyCard.module.css */
+
+/* ... style lainnya ... */
+
+.content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .status {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: #b3b3b3; /* Warna abu-abu muda untuk status tidak aktif */
+  }
+  
+  .songInfo {
+    margin-bottom: 8px;
+  }
+  
+  .title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 4px;
+  }
+  
+  .artist {
+    font-size: 0.8rem;
+    color: #b3b3b3;
+  }
+  
+  .progressBarContainer {
+    background-color: #282828; /* Latar belakang progress bar */
+    height: 4px;
+    border-radius: 2px;
+    margin-bottom: 6px;
+    overflow: hidden; /* Penting untuk border-radius pada progress */
+  }
+  
+  .progress {
+    background-color: #1db954; /* Warna progress aktif */
+    height: 100%;
+    width: 0%; /* Akan diupdate dengan data realtime (jika ada) */
+    border-radius: 2px;
+  }
+  
+  .time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: #b3b3b3;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: white; /* Warna ikon kontrol (jika ditambahkan) */
+  }
+  
+  .controls button {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+  }
